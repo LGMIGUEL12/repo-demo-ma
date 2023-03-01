@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../app/routes/__app/tasks/index.tsx"],
+  "sourcesContent": ["function TasksPage() {\n  return (\n    <>\n      <h2>hola mundo</h2>\n    </>\n  );\n}\n\nexport default TasksPage;\n"],
+  "mappings": ";;;;;;;;;AAAA;AAAA,SAAS,YAAY;AACnB,SACE;AAAA,IACE,6DAAC;AAAA,MAAG;AAAA,OAAJ;AAAA;AAAA;AAAA;AAAA,WAAc;AAAA,KADhB;AAAA;AAAA;AAAA;AAAA,SAEA;AAEJ;AAEA,IAAO,gBAAQ;",
+  "names": []
+}

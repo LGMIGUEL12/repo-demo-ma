@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/components/settings/SettingsContentContainer.tsx"],
+  "sourcesContent": ["const SettingsContentContainer: React.FCC = ({ children }) => {\n  return <div className={'w-full lg:max-w-4xl'}>{children}</div>;\n};\n\nexport default SettingsContentContainer;\n"],
+  "mappings": ";;;;;;;;AAAA;AAAA,IAAM,2BAAsC,CAAC,EAAE,SAAS,MAAM;AAC5D,SAAO,mDAAC;AAAA,IAAI,WAAW;AAAA,IAAwB;AAAA,KAAxC;AAAA;AAAA;AAAA;AAAA,SAAiD;AAC1D;AAEA,IAAO,mCAAQ;",
+  "names": []
+}

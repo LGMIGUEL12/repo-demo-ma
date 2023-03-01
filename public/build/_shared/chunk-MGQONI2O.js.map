@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/lib/organizations/roles.ts"],
+  "sourcesContent": ["import type { ListBoxOptionModel } from '~/core/ui/ListBox/ListBox';\nimport MembershipRole from '~/lib/organizations/types/membership-role';\n\n/**\n * User Roles\n *\n * Here is where you can edit the user roles in your application according\n * to your application's domain.\n *\n * For example, you could add a role named\n * \"Account Manager\":\n * 1. extend the enum {@link MembershipRole}\n * 2. add the i18n strings\n * 3. apply any needed change to ~/lib/permissions.ts\n * 4. add a new model below, so you can display the correct data in the\n * selector component {@link MembershipRoleSelector}\n */\n\nconst OWNER = {\n  label: 'common:roles.owner.label',\n  description: 'common:roles.owner.description',\n  value: MembershipRole.Owner,\n};\n\nconst ADMIN = {\n  label: 'common:roles.admin.label',\n  description: 'common:roles.admin.description',\n  value: MembershipRole.Admin,\n};\n\nconst MEMBER = {\n  label: 'common:roles.member.label',\n  description: 'common:roles.member.description',\n  value: MembershipRole.Member,\n};\n\nconst roles: ListBoxOptionModel<MembershipRole>[] = [OWNER, ADMIN, MEMBER];\n\nexport default roles;\n"],
+  "mappings": ";;;;;AAkBA,IAAM,QAAQ;AAAA,EACZ,OAAO;AAAA,EACP,aAAa;AAAA,EACb,OAAO,wBAAe;AACxB;AAEA,IAAM,QAAQ;AAAA,EACZ,OAAO;AAAA,EACP,aAAa;AAAA,EACb,OAAO,wBAAe;AACxB;AAEA,IAAM,SAAS;AAAA,EACb,OAAO;AAAA,EACP,aAAa;AAAA,EACb,OAAO,wBAAe;AACxB;AAEA,IAAM,QAA8C,CAAC,OAAO,OAAO,MAAM;AAEzE,IAAO,gBAAQ;",
+  "names": []
+}

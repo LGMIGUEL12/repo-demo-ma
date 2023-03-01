@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/core/firebase/admin/create-admin-app.ts"],
+  "sourcesContent": ["import type { FirebaseAdminAppParams } from '../types/firebase-admin-app-params';\n\n/**\n * @name createFirebaseAdminApp\n * @param params\n */\nexport async function createFirebaseAdminApp(params: FirebaseAdminAppParams) {\n  const { getApps, getApp, cert, initializeApp } = await import(\n    'firebase-admin/app'\n  );\n\n  if (getApps().length > 0) {\n    return getApp();\n  }\n\n  const privateKey = formatFirebasePrivateKey(params.privateKey);\n\n  const credential = cert({\n    projectId: params.projectId,\n    clientEmail: params.clientEmail,\n    privateKey,\n  });\n\n  return initializeApp({\n    credential,\n    projectId: params.projectId,\n    storageBucket: params.storageBucket,\n  });\n}\n\nfunction formatFirebasePrivateKey(key: string) {\n  return key.replace(/\\\\n/g, '\\n');\n}\n"],
+  "mappings": ";;;AAMA,eAAsB,uBAAuB,QAAgC;AAC3E,QAAM,EAAE,SAAS,QAAQ,MAAM,cAAc,IAAI,MAAM,OACrD;AAGF,MAAI,QAAQ,EAAE,SAAS,GAAG;AACxB,WAAO,OAAO;AAAA,EAChB;AAEA,QAAM,aAAa,yBAAyB,OAAO,UAAU;AAE7D,QAAM,aAAa,KAAK;AAAA,IACtB,WAAW,OAAO;AAAA,IAClB,aAAa,OAAO;AAAA,IACpB;AAAA,EACF,CAAC;AAED,SAAO,cAAc;AAAA,IACnB;AAAA,IACA,WAAW,OAAO;AAAA,IAClB,eAAe,OAAO;AAAA,EACxB,CAAC;AACH;AAEA,SAAS,yBAAyB,KAAa;AAC7C,SAAO,IAAI,QAAQ,QAAQ,IAAI;AACjC;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/core/ui/ClientOnly.tsx"],
+  "sourcesContent": ["import type { ReactNode } from 'react';\nimport { Suspense, useEffect, useState } from 'react';\n\nfunction ClientOnly({ children }: { children: ReactNode }) {\n  let [mounted, setMounted] = useState(false);\n\n  useEffect(() => {\n    setMounted(true);\n  }, []);\n\n  return mounted ? <Suspense fallback={''}>{children}</Suspense> : null;\n}\n\nexport default ClientOnly;\n"],
+  "mappings": ";;;;;;;;;;;AACA,mBAA8C;AAD9C;AAGA,SAAS,WAAW,EAAE,SAAS,GAA4B;AACzD,MAAI,CAAC,SAAS,UAAU,QAAI,uBAAS,KAAK;AAE1C,8BAAU,MAAM;AACd,eAAW,IAAI;AAAA,EACjB,GAAG,CAAC,CAAC;AAEL,SAAO,UAAU,mDAAC;AAAA,IAAS,UAAU;AAAA,IAAK;AAAA,KAAzB;AAAA;AAAA;AAAA;AAAA,SAAkC,IAAc;AACnE;AAEA,IAAO,qBAAQ;",
+  "names": []
+}

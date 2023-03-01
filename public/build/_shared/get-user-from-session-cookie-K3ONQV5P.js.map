@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/core/firebase/admin/auth/get-user-from-session-cookie.ts"],
+  "sourcesContent": ["import { getAuth } from 'firebase-admin/auth';\n\n/**\n * @name getUserFromSessionCookie\n * @description Gets the current ID token {@link DecodedIdToken}\n * from session cookie\n * @param session\n */\nexport async function getUserFromSessionCookie(session: string) {\n  const auth = getAuth();\n\n  return auth.verifySessionCookie(session, true);\n}\n"],
+  "mappings": ";;;;;;;;;;AAQA,eAAsB,yBAAyB,SAAiB;AAC9D,QAAM,OAAO,QAAQ;AAErB,SAAO,KAAK,oBAAoB,SAAS,IAAI;AAC/C;",
+  "names": []
+}

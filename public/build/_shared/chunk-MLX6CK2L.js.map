@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/lib/firestore-collections.ts"],
+  "sourcesContent": ["/**\n * Firestore Collections\n *\n * Here we export our Firestore collection names so that we can reuse them\n * across both client and server libraries\n *\n */\n\nexport const USERS_COLLECTION = `users`;\nexport const ORGANIZATIONS_COLLECTION = `organizations`;\nexport const INVITES_COLLECTION = `invites`;\nexport const TASKS_COLLECTION = `tasks`;\n\n"],
+  "mappings": ";AAQO,IAAM,mBAAmB;AACzB,IAAM,2BAA2B;AACjC,IAAM,qBAAqB;AAC3B,IAAM,mBAAmB;",
+  "names": []
+}

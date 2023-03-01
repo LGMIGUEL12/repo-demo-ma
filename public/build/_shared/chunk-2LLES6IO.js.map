@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/core/firebase/utils/get-firebase-error-code.ts"],
+  "sourcesContent": ["import { FirebaseError } from 'firebase/app';\n\nexport default function getFirebaseErrorCode(error: Maybe<unknown>) {\n  if (!error) {\n    return;\n  }\n\n  return isFirebaseError(error) ? error.code : undefined;\n}\n\nfunction isFirebaseError(error: unknown): error is FirebaseError {\n  return error instanceof FirebaseError;\n}\n"],
+  "mappings": ";;;;;AAEe,SAAR,qBAAsC,OAAuB;AAClE,MAAI,CAAC,OAAO;AACV;AAAA,EACF;AAEA,SAAO,gBAAgB,KAAK,IAAI,MAAM,OAAO;AAC/C;AAEA,SAAS,gBAAgB,OAAwC;AAC/D,SAAO,iBAAiB;AAC1B;",
+  "names": []
+}

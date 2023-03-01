@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/core/firebase/hooks/use-recaptcha-verifier.ts"],
+  "sourcesContent": ["import { useAuth } from 'reactfire';\nimport { useCallback } from 'react';\n\nfunction useRecaptchaVerifier(id: string) {\n  const auth = useAuth();\n\n  return useCallback(async () => {\n    const { RecaptchaVerifier } = await import('firebase/auth');\n\n    return new RecaptchaVerifier(\n      id,\n      {\n        size: 'invisible',\n      },\n      auth\n    );\n  }, [auth, id]);\n}\n\nexport default useRecaptchaVerifier;\n"],
+  "mappings": ";;;;;;;;;;;AACA,mBAA4B;AAE5B,SAAS,qBAAqB,IAAY;AACxC,QAAM,OAAO,GAAQ;AAErB,aAAO,0BAAY,YAAY;AAC7B,UAAM,EAAE,kBAAkB,IAAI,MAAM,OAAO;AAE3C,WAAO,IAAI;AAAA,MACT;AAAA,MACA;AAAA,QACE,MAAM;AAAA,MACR;AAAA,MACA;AAAA,IACF;AAAA,EACF,GAAG,CAAC,MAAM,EAAE,CAAC;AACf;AAEA,IAAO,iCAAQ;",
+  "names": []
+}

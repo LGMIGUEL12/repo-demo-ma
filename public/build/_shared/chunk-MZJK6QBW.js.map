@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/firebase.config.ts"],
+  "sourcesContent": ["import getEnv from '~/core/get-env';\n\nconst env = getEnv();\n\nconst firebaseConfig = {\n  apiKey: env.FIREBASE_API_KEY,\n  authDomain: env.FIREBASE_AUTH_DOMAIN,\n  projectId: env.FIREBASE_PROJECT_ID,\n  storageBucket: env.FIREBASE_STORAGE_BUCKET,\n  messagingSenderId: env.FIREBASE_MESSAGING_SENDER_ID,\n  appId: env.FIREBASE_APP_ID,\n  measurementId: env.FIREBASE_MEASUREMENT_ID,\n  emulator: env.EMULATOR === 'true',\n};\n\nexport default firebaseConfig;\n"],
+  "mappings": ";;;;;AAEA,IAAM,MAAM,gBAAO;AAEnB,IAAM,iBAAiB;AAAA,EACrB,QAAQ,IAAI;AAAA,EACZ,YAAY,IAAI;AAAA,EAChB,WAAW,IAAI;AAAA,EACf,eAAe,IAAI;AAAA,EACnB,mBAAmB,IAAI;AAAA,EACvB,OAAO,IAAI;AAAA,EACX,eAAe,IAAI;AAAA,EACnB,UAAU,IAAI,aAAa;AAC7B;AAEA,IAAO,0BAAQ;",
+  "names": []
+}

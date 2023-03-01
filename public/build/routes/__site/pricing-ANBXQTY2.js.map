@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../app/routes/__site/pricing.tsx"],
+  "sourcesContent": ["import type { MetaFunction } from '@remix-run/node';\n\nimport Container from '~/core/ui/Container';\nimport PricingTable from '~/components/PricingTable';\nimport Hero from '~/core/ui/Hero';\nimport SubHeading from '~/core/ui/SubHeading';\n\nimport configuration from '~/configuration';\n\nexport const meta: MetaFunction = () => {\n  return {\n    title: `Pricing - ${configuration.site.siteName}`,\n  };\n};\n\nfunction Pricing() {\n  return (\n    <Container>\n      <Hero>Pricing</Hero>\n      <SubHeading>Fair pricing for your customers</SubHeading>\n\n      <div className={'mt-12'}>\n        <PricingTable />\n      </div>\n    </Container>\n  );\n}\n\nexport default Pricing;\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AASO,IAAM,OAAqB,MAAM;AACtC,SAAO;AAAA,IACL,OAAO,aAAa,sBAAc,KAAK;AAAA,EACzC;AACF;AAEA,SAAS,UAAU;AACjB,SACE,mDAAC;AAAA,IACC;AAAA,yDAAC;AAAA,QAAK;AAAA,SAAN;AAAA;AAAA;AAAA;AAAA,aAAa;AAAA,MACb,mDAAC;AAAA,QAAW;AAAA,SAAZ;AAAA;AAAA;AAAA;AAAA,aAA2C;AAAA,MAE3C,mDAAC;AAAA,QAAI,WAAW;AAAA,QACd,6DAAC,0BAAD;AAAA;AAAA;AAAA;AAAA,eAAc;AAAA,SADhB;AAAA;AAAA;AAAA;AAAA,aAEA;AAAA;AAAA,KANF;AAAA;AAAA;AAAA;AAAA,SAOA;AAEJ;AAEA,IAAO,kBAAQ;",
+  "names": []
+}

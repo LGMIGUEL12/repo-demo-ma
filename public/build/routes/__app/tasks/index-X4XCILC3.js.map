@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../app/routes/__app/tasks/index.tsx", "../../../../../app/components/tasks/TasksContainer.tsx"],
+  "sourcesContent": ["import { Trans } from 'react-i18next';\nimport AppContainer from '~/components/AppContainer';\nimport AppHeader from '~/components/AppHeader';\nimport TasksContainer from '~/components/tasks/TasksContainer';\nimport ClientOnly from '~/core/ui/ClientOnly';\n\nfunction TasksPage() {\n  return (\n    <>\n      <AppHeader>\n        <Trans i18nKey={'common:tasksTabLabel'} />\n      </AppHeader>\n      <ClientOnly>\n        <AppContainer>\n          <TasksContainer />\n        </AppContainer>\n      </ClientOnly>\n    </>\n  );\n}\n\nexport default TasksPage;\n", "import React from 'react';\n\nconst TasksContainer: React.FC<{}> = () => {\n  return (\n    <>\n      <h2>agregando cosas</h2>\n    </>\n  );\n};\n\nexport default TasksContainer;\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;;ACAA;AAEA,IAAM,iBAA+B,MAAM;AACzC,SACE;AAAA,IACE,6DAAC;AAAA,MAAG;AAAA,OAAJ;AAAA;AAAA;AAAA;AAAA,WAAmB;AAAA,KADrB;AAAA;AAAA;AAAA;AAAA,SAEA;AAEJ;AAEA,IAAO,yBAAQ;;;ADVf;AAMA,SAAS,YAAY;AACnB,SACE;AAAA,IACE;AAAA,yDAAC;AAAA,QACC,6DAAC;AAAA,UAAM,SAAS;AAAA,WAAhB;AAAA;AAAA;AAAA;AAAA,eAAwC;AAAA,SAD1C;AAAA;AAAA;AAAA;AAAA,aAEA;AAAA,MACA,mDAAC;AAAA,QACC,6DAAC;AAAA,UACC,6DAAC,4BAAD;AAAA;AAAA;AAAA;AAAA,iBAAgB;AAAA,WADlB;AAAA;AAAA;AAAA;AAAA,eAEA;AAAA,SAHF;AAAA;AAAA;AAAA;AAAA,aAIA;AAAA;AAAA,KARF;AAAA;AAAA;AAAA;AAAA,SASA;AAEJ;AAEA,IAAO,gBAAQ;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/core/session/contexts/user-session.ts"],
+  "sourcesContent": ["import { createContext } from 'react';\nimport type UserSession from '~/core/session/types/user-session';\n\nconst UserSessionContext = createContext<{\n  userSession: Maybe<UserSession>;\n  setUserSession: (user: Maybe<UserSession>) => void;\n}>({\n  userSession: undefined,\n  setUserSession: (_) => _,\n});\n\nexport default UserSessionContext;\n"],
+  "mappings": ";;;;;;;;AAAA,mBAA8B;AAG9B,IAAM,yBAAqB,4BAGxB;AAAA,EACD,aAAa;AAAA,EACb,gBAAgB,CAAC,MAAM;AACzB,CAAC;AAED,IAAO,uBAAQ;",
+  "names": []
+}

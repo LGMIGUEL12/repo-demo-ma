@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/core/generic/is-browser.ts", "../../../app/core/get-env.ts"],
+  "sourcesContent": ["function isBrowser() {\n  return typeof window !== 'undefined';\n}\n\nexport default isBrowser;\n", "import isBrowser from '~/core/generic/is-browser';\n\nfunction getEnv() {\n  return isBrowser() ? window.ENV : process.env;\n}\n\nexport default getEnv;\n"],
+  "mappings": ";AAAA,SAAS,YAAY;AACnB,SAAO,OAAO,WAAW;AAC3B;AAEA,IAAO,qBAAQ;;;ACFf,SAAS,SAAS;AAChB,SAAO,mBAAU,IAAI,OAAO,MAAM,QAAQ;AAC5C;AAEA,IAAO,kBAAQ;",
+  "names": []
+}

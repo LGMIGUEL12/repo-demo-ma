@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/lib/organizations/types/membership-role.ts"],
+  "sourcesContent": ["enum MembershipRole {\n  Member,\n  Admin,\n  Owner,\n}\n\nexport default MembershipRole;\n"],
+  "mappings": ";AAAA,IAAK,iBAAL,kBAAKA,oBAAL;AACE,EAAAA,gCAAA;AACA,EAAAA,gCAAA;AACA,EAAAA,gCAAA;AAHG,SAAAA;AAAA,GAAA;AAML,IAAO,0BAAQ;",
+  "names": ["MembershipRole"]
+}

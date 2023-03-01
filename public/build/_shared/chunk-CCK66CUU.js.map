@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/lib/contexts/organization.ts"],
+  "sourcesContent": ["import { createContext } from 'react';\nimport type Organization from '~/lib/organizations/types/organization';\n\nconst OrganizationContext = createContext<{\n  organization: Maybe<WithId<Organization>>;\n  setOrganization: (user: WithId<Organization>) => void;\n}>({\n  organization: undefined,\n  setOrganization: (_) => _,\n});\n\nexport default OrganizationContext;\n"],
+  "mappings": ";;;;;;;;AAAA,mBAA8B;AAG9B,IAAM,0BAAsB,4BAGzB;AAAA,EACD,cAAc;AAAA,EACd,iBAAiB,CAAC,MAAM;AAC1B,CAAC;AAED,IAAO,uBAAQ;",
+  "names": []
+}

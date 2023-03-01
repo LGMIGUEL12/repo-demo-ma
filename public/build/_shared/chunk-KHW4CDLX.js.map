@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/core/hooks/use-user-session.ts"],
+  "sourcesContent": ["import { useContext } from 'react';\nimport UserSessionContext from '~/core/session/contexts/user-session';\n\nexport default function useUserSession() {\n  const { userSession } = useContext(UserSessionContext);\n\n  return userSession;\n}\n"],
+  "mappings": ";;;;;;;;;;;AAAA,mBAA2B;AAGZ,SAAR,iBAAkC;AACvC,QAAM,EAAE,YAAY,QAAI,yBAAW,oBAAkB;AAErD,SAAO;AACT;",
+  "names": []
+}

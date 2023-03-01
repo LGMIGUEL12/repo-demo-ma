@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../node_modules/@headlessui/react/dist/hooks/use-owner.js"],
+  "sourcesContent": ["import{useMemo as t}from\"react\";import{getOwnerDocument as o}from'../utils/owner.js';function n(...e){return t(()=>o(...e),[...e])}export{n as useOwnerDocument};\n"],
+  "mappings": ";;;;;;;;;;;AAAA,mBAAwB;AAA6D,SAAS,KAAKA,IAAE;AAAC,aAAO,aAAAC,SAAE,MAAI,EAAE,GAAGD,EAAC,GAAE,CAAC,GAAGA,EAAC,CAAC;AAAC;",
+  "names": ["e", "t"]
+}

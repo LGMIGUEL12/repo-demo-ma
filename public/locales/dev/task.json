@@ -1,0 +1,8 @@
+{
+	"createTaskSubmitLabel": "Add Task",
+	"titleInputLabel": "Task Title",
+	"descriptionInputLabel": "Task Description",
+	"createTaskSuccess": "Task created successfully",
+	"createTaskError": "Task not created. Please try again.",
+	"createTaskLoading": "Creating task ..."
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../node_modules/@heroicons/react/24/outline/XMarkIcon.js"],
+  "sourcesContent": ["const React = require(\"react\");\n\nfunction XMarkIcon({\n  title,\n  titleId,\n  ...props\n}, svgRef) {\n  return /*#__PURE__*/React.createElement(\"svg\", Object.assign({\n    xmlns: \"http://www.w3.org/2000/svg\",\n    fill: \"none\",\n    viewBox: \"0 0 24 24\",\n    strokeWidth: 1.5,\n    stroke: \"currentColor\",\n    \"aria-hidden\": \"true\",\n    ref: svgRef,\n    \"aria-labelledby\": titleId\n  }, props), title ? /*#__PURE__*/React.createElement(\"title\", {\n    id: titleId\n  }, title) : null, /*#__PURE__*/React.createElement(\"path\", {\n    strokeLinecap: \"round\",\n    strokeLinejoin: \"round\",\n    d: \"M6 18L18 6M6 6l12 12\"\n  }));\n}\n\nconst ForwardRef = React.forwardRef(XMarkIcon);\nmodule.exports = ForwardRef;"],
+  "mappings": ";;;;;;;;AAAA;AAAA;AAAA,QAAM,QAAQ;AAEd,aAAS,UAAU;AAAA,MACjB;AAAA,MACA;AAAA,SACG;AAAA,IACL,GAAG,QAAQ;AACT,aAAoB,sBAAM,cAAc,OAAO,OAAO,OAAO;AAAA,QAC3D,OAAO;AAAA,QACP,MAAM;AAAA,QACN,SAAS;AAAA,QACT,aAAa;AAAA,QACb,QAAQ;AAAA,QACR,eAAe;AAAA,QACf,KAAK;AAAA,QACL,mBAAmB;AAAA,MACrB,GAAG,KAAK,GAAG,QAAqB,sBAAM,cAAc,SAAS;AAAA,QAC3D,IAAI;AAAA,MACN,GAAG,KAAK,IAAI,MAAmB,sBAAM,cAAc,QAAQ;AAAA,QACzD,eAAe;AAAA,QACf,gBAAgB;AAAA,QAChB,GAAG;AAAA,MACL,CAAC,CAAC;AAAA,IACJ;AAEA,QAAM,aAAa,MAAM,WAAW,SAAS;AAC7C,WAAO,UAAU;AAAA;AAAA;",
+  "names": []
+}

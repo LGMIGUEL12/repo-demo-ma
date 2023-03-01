@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/components/FallbackUserAvatar.tsx"],
+  "sourcesContent": ["import { UserIcon } from '@heroicons/react/24/outline';\n\nconst FallbackUserAvatar: React.FCC<{ text: Maybe<string> }> = ({ text }) => {\n  if (!text) {\n    return (\n      <span className={`FallbackUserAvatar`}>\n        <UserIcon className={'h-5'} />\n      </span>\n    );\n  }\n\n  return <span className={`FallbackUserAvatar`}>{text[0]}</span>;\n};\n\nexport default FallbackUserAvatar;\n"],
+  "mappings": ";;;;;;;;;;;AAAA;AAEA,IAAM,qBAAyD,CAAC,EAAE,KAAK,MAAM;AAC3E,MAAI,CAAC,MAAM;AACT,WACE,mDAAC;AAAA,MAAK,WAAW;AAAA,MACf,6DAAC;AAAA,QAAS,WAAW;AAAA,SAArB;AAAA;AAAA;AAAA;AAAA,aAA4B;AAAA,OAD9B;AAAA;AAAA;AAAA;AAAA,WAEA;AAAA,EAEJ;AAEA,SAAO,mDAAC;AAAA,IAAK,WAAW;AAAA,IAAuB,eAAK;AAAA,KAA7C;AAAA;AAAA;AAAA;AAAA,SAAgD;AACzD;AAEA,IAAO,6BAAQ;",
+  "names": []
+}

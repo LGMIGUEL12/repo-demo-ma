@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/core/firebase/admin/create-emulator-admin-app.ts"],
+  "sourcesContent": ["import type { AppOptions } from 'firebase-admin/app';\n\n/**\n * @name createEmulatorAdminApp\n * @param appName\n */\nexport async function createEmulatorAdminApp(appName?: string) {\n  const projectId = process.env.GCLOUD_PROJECT;\n  const options: AppOptions = { projectId };\n\n  const { getApps, getApp, initializeApp } = await import('firebase-admin/app');\n\n  if (getApps().length) {\n    return getApp(appName);\n  }\n\n  return initializeApp(options, appName);\n}\n"],
+  "mappings": ";;;AAMA,eAAsB,uBAAuB,SAAkB;AAC7D,QAAM,YAAY,QAAQ,IAAI;AAC9B,QAAM,UAAsB,EAAE,UAAU;AAExC,QAAM,EAAE,SAAS,QAAQ,cAAc,IAAI,MAAM,OAAO;AAExD,MAAI,QAAQ,EAAE,QAAQ;AACpB,WAAO,OAAO,OAAO;AAAA,EACvB;AAEA,SAAO,cAAc,SAAS,OAAO;AACvC;",
+  "names": []
+}

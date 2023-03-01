@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/components/auth/AuthErrorMessage.tsx"],
+  "sourcesContent": ["import { Trans } from 'react-i18next';\nimport Alert from '~/core/ui/Alert';\n\n/**\n * @name AuthErrorMessage\n * @param error This error comes from Firebase as the code returned on errors\n * This error is mapped from the translation auth:errors.{error}\n * To update the error messages, please update the translation file\n * @constructor\n */\nexport default function AuthErrorMessage({ error }: { error: Maybe<string> }) {\n  if (!error) {\n    return null;\n  }\n\n  const DefaultError = <Trans i18nKey=\"auth:errors.default\" />;\n\n  return (\n    <Alert className={'w-full'} type={'error'}>\n      <p className={'text-sm font-semibold'} data-cy={'auth-error-message'}>\n        <Trans\n          i18nKey={`auth:errors.${error}`}\n          defaults={'<DefaultError />'}\n          components={{ DefaultError }}\n        />\n      </p>\n    </Alert>\n  );\n}\n"],
+  "mappings": ";;;;;;;;;;;;;;;AAAA;AAAA;AAUe,SAAR,iBAAkC,EAAE,MAAM,GAA6B;AAC5E,MAAI,CAAC,OAAO;AACV,WAAO;AAAA,EACT;AAEA,QAAM,eAAe,mDAAC;AAAA,IAAM,SAAQ;AAAA,KAAf;AAAA;AAAA;AAAA;AAAA,SAAqC;AAE1D,SACE,mDAAC;AAAA,IAAM,WAAW;AAAA,IAAU,MAAM;AAAA,IAChC,6DAAC;AAAA,MAAE,WAAW;AAAA,MAAyB,WAAS;AAAA,MAC9C,6DAAC;AAAA,QACC,SAAS,eAAe;AAAA,QACxB,UAAU;AAAA,QACV,YAAY,EAAE,aAAa;AAAA,SAH7B;AAAA;AAAA;AAAA;AAAA,aAIA;AAAA,OALF;AAAA;AAAA;AAAA;AAAA,WAMA;AAAA,KAPF;AAAA;AAAA;AAAA;AAAA,SAQA;AAEJ;",
+  "names": []
+}

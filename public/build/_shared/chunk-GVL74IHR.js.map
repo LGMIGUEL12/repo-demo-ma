@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/core/ui/Hero.tsx"],
+  "sourcesContent": ["const Hero: React.FCC = ({ children }) => {\n  return <h1 className=\"Hero\">{children}</h1>;\n};\n\nexport default Hero;\n"],
+  "mappings": ";;;;;;;;AAAA;AAAA,IAAM,OAAkB,CAAC,EAAE,SAAS,MAAM;AACxC,SAAO,mDAAC;AAAA,IAAG,WAAU;AAAA,IAAQ;AAAA,KAAtB;AAAA;AAAA;AAAA;AAAA,SAA+B;AACxC;AAEA,IAAO,eAAQ;",
+  "names": []
+}

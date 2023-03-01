@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/routes/auth.tsx"],
+  "sourcesContent": ["import { Outlet } from '@remix-run/react';\nimport type { MetaFunction } from '@remix-run/node';\nimport loadAuthPageData from '~/lib/server/loaders/load-auth-page-data';\nimport AuthPageShell from '~/components/auth/AuthPageShell';\n\nexport const loader = loadAuthPageData;\n\nexport const meta: MetaFunction = ({ data }) => {\n  return {\n    'csrf-token': data?.csrfToken,\n  };\n};\n\nfunction AuthLayout() {\n  return (\n    <AuthPageShell>\n      <Outlet />\n    </AuthPageShell>\n  );\n}\n\nexport default AuthLayout;\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAOO,IAAM,OAAqB,CAAC,EAAE,KAAK,MAAM;AAC9C,SAAO;AAAA,IACL,cAAc,MAAM;AAAA,EACtB;AACF;AAEA,SAAS,aAAa;AACpB,SACE,mDAAC;AAAA,IACC,6DAAC,YAAD;AAAA;AAAA;AAAA;AAAA,WAAQ;AAAA,KADV;AAAA;AAAA;AAAA;AAAA,SAEA;AAEJ;AAEA,IAAO,eAAQ;",
+  "names": []
+}

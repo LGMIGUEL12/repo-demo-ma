@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/core/ui/Badge.tsx"],
+  "sourcesContent": ["type Color = `normal` | 'success' | 'custom';\ntype Size = `normal` | `small`;\n\nconst colorClasses = {\n  normal: `ColorNormal`,\n  success: `ColorSuccess`,\n  custom: '',\n};\n\nconst sizeClasses = {\n  normal: `SizeNormal`,\n  small: `SizeSmall`,\n};\n\nfunction getColorClasses(color?: Color) {\n  return colorClasses[color || `normal`];\n}\n\nfunction getSizeClasses(size?: Size) {\n  return sizeClasses[size || `normal`];\n}\n\nconst Badge: React.FCC<{\n  color?: Color;\n  size?: Size;\n  className?: string;\n}> = ({ children, color, size, className }) => {\n  const colorClasses = getColorClasses(color);\n  const sizeClasses = getSizeClasses(size);\n\n  return (\n    <div className={`Badge ${colorClasses} ${sizeClasses} ${className ?? ''}`}>\n      {children}\n    </div>\n  );\n};\n\nexport default Badge;\n"],
+  "mappings": ";;;;;;;;AAAA;AAGA,IAAM,eAAe;AAAA,EACnB,QAAQ;AAAA,EACR,SAAS;AAAA,EACT,QAAQ;AACV;AAEA,IAAM,cAAc;AAAA,EAClB,QAAQ;AAAA,EACR,OAAO;AACT;AAEA,SAAS,gBAAgB,OAAe;AACtC,SAAO,aAAa,SAAS;AAC/B;AAEA,SAAS,eAAe,MAAa;AACnC,SAAO,YAAY,QAAQ;AAC7B;AAEA,IAAM,QAID,CAAC,EAAE,UAAU,OAAO,MAAM,UAAU,MAAM;AAC7C,QAAMA,gBAAe,gBAAgB,KAAK;AAC1C,QAAMC,eAAc,eAAe,IAAI;AAEvC,SACE,mDAAC;AAAA,IAAI,WAAW,SAASD,iBAAgBC,gBAAe,aAAa;AAAA,IAClE;AAAA,KADH;AAAA;AAAA;AAAA;AAAA,SAEA;AAEJ;AAEA,IAAO,gBAAQ;",
+  "names": ["colorClasses", "sizeClasses"]
+}

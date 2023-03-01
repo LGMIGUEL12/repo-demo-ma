@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/core/hooks/use-create-server-side-session.ts", "../../../app/core/hooks/use-create-session.ts"],
+  "sourcesContent": ["import { useCallback } from 'react';\nimport type { User } from 'firebase/auth';\n\nimport { useCreateSession } from '~/core/hooks/use-create-session';\n\nfunction useCreateServerSideSession() {\n  const [signIn, signInState] = useCreateSession();\n\n  const signInCallback = useCallback(\n    async (user: User, forceRefresh = true) => {\n      const idToken = await user.getIdToken(forceRefresh);\n\n      return signIn({ idToken });\n    },\n    [signIn]\n  );\n\n  return [signInCallback, signInState] as [\n    typeof signInCallback,\n    typeof signInState\n  ];\n}\n\nexport default useCreateServerSideSession;\n", "import useApiRequest from '~/core/hooks/use-api';\n\ninterface Body {\n  idToken: string;\n}\n\nexport function useCreateSession() {\n  return useApiRequest<void, Body>('/auth/session', 'POST');\n}\n"],
+  "mappings": ";;;;;;;;;;;AAAA,mBAA4B;;;ACMrB,SAAS,mBAAmB;AACjC,SAAO,cAA0B,iBAAiB,MAAM;AAC1D;;;ADHA,SAAS,6BAA6B;AACpC,QAAM,CAAC,QAAQ,WAAW,IAAI,iBAAiB;AAE/C,QAAM,qBAAiB;AAAA,IACrB,OAAO,MAAY,eAAe,SAAS;AACzC,YAAM,UAAU,MAAM,KAAK,WAAW,YAAY;AAElD,aAAO,OAAO,EAAE,QAAQ,CAAC;AAAA,IAC3B;AAAA,IACA,CAAC,MAAM;AAAA,EACT;AAEA,SAAO,CAAC,gBAAgB,WAAW;AAIrC;AAEA,IAAO,yCAAQ;",
+  "names": []
+}

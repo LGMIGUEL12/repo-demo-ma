@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/core/ui/Container.tsx"],
+  "sourcesContent": ["const Container: React.FCC = ({ children }) => {\n  return <div className=\"Container\">{children}</div>;\n};\n\nexport default Container;\n"],
+  "mappings": ";;;;;;;;AAAA;AAAA,IAAM,YAAuB,CAAC,EAAE,SAAS,MAAM;AAC7C,SAAO,mDAAC;AAAA,IAAI,WAAU;AAAA,IAAa;AAAA,KAA5B;AAAA;AAAA;AAAA;AAAA,SAAqC;AAC9C;AAEA,IAAO,oBAAQ;",
+  "names": []
+}

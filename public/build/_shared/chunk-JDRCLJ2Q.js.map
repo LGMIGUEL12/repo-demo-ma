@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/core/firebase/hooks/use-get-csrf-token.ts"],
+  "sourcesContent": ["import { useCallback } from 'react';\n\n/**\n * @description Retrieves the current CSRF token in the page\n */\nexport default function useGetCsrfToken() {\n  return useCallback(() => {\n    const element = document.querySelector('meta[name=\"csrf-token\"]');\n\n    return element?.getAttribute('content');\n  }, []);\n}\n"],
+  "mappings": ";;;;;;;;AAAA,mBAA4B;AAKb,SAAR,kBAAmC;AACxC,aAAO,0BAAY,MAAM;AACvB,UAAM,UAAU,SAAS,cAAc,yBAAyB;AAEhE,WAAO,SAAS,aAAa,SAAS;AAAA,EACxC,GAAG,CAAC,CAAC;AACP;",
+  "names": []
+}

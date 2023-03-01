@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/routes/invite.tsx"],
+  "sourcesContent": ["import { Outlet } from '@remix-run/react';\nimport AuthPageShell from '~/components/auth/AuthPageShell';\n\nfunction InviteLayout() {\n  return (\n    <AuthPageShell>\n      <Outlet />\n    </AuthPageShell>\n  );\n}\n\nexport default InviteLayout;\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAGA,SAAS,eAAe;AACtB,SACE,mDAAC;AAAA,IACC,6DAAC,YAAD;AAAA;AAAA;AAAA;AAAA,WAAQ;AAAA,KADV;AAAA;AAAA;AAAA;AAAA,SAEA;AAEJ;AAEA,IAAO,iBAAQ;",
+  "names": []
+}

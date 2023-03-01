@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/core/ui/SubHeading.tsx"],
+  "sourcesContent": ["const SubHeading: React.FCC = ({ children }) => {\n  return <h2 className=\"SubHeading\">{children}</h2>;\n};\n\nexport default SubHeading;\n"],
+  "mappings": ";;;;;;;;AAAA;AAAA,IAAM,aAAwB,CAAC,EAAE,SAAS,MAAM;AAC9C,SAAO,mDAAC;AAAA,IAAG,WAAU;AAAA,IAAc;AAAA,KAA5B;AAAA;AAAA;AAAA;AAAA,SAAqC;AAC9C;AAEA,IAAO,qBAAQ;",
+  "names": []
+}

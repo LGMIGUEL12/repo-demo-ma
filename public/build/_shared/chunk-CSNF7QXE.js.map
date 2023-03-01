@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/core/ui/Label.tsx"],
+  "sourcesContent": ["import { createElement } from 'react';\n\ntype Props = React.LabelHTMLAttributes<unknown> & {\n  as?: string;\n};\n\nconst Label: React.FCC<Props> = ({ children, className, as, ...props }) => {\n  const tag = as ?? `label`;\n\n  return createElement(\n    tag,\n    {\n      className: `Label ${className ?? ''}`,\n      ...props,\n    },\n    children\n  );\n};\n\nexport default Label;\n"],
+  "mappings": ";;;;;;;;AAAA,mBAA8B;AAM9B,IAAM,QAA0B,CAAC,EAAE,UAAU,WAAW,OAAO,MAAM,MAAM;AACzE,QAAM,MAAM,MAAM;AAElB,aAAO;AAAA,IACL;AAAA,IACA;AAAA,MACE,WAAW,SAAS,aAAa;AAAA,MACjC,GAAG;AAAA,IACL;AAAA,IACA;AAAA,EACF;AACF;AAEA,IAAO,gBAAQ;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../app/routes/__app/photos/index.tsx"],
+  "sourcesContent": ["function PhotosPage() {\n  return (\n    <>\n      <h2>hola mundo desde photosPage</h2>\n    </>\n  );\n}\n\nexport default PhotosPage;\n"],
+  "mappings": ";;;;;;;;;AAAA;AAAA,SAAS,aAAa;AACpB,SACE;AAAA,IACE,6DAAC;AAAA,MAAG;AAAA,OAAJ;AAAA;AAAA;AAAA;AAAA,WAA+B;AAAA,KADjC;AAAA;AAAA;AAAA;AAAA,SAEA;AAEJ;AAEA,IAAO,iBAAQ;",
+  "names": []
+}
